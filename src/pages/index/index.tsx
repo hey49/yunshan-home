@@ -54,7 +54,7 @@ const Index: React.FC = (props) => {
     return (
       <Container>
         <Card>
-          <Grid container direction='column' justify="center" alignItems="center">
+          <Grid container direction='column' justify="center" alignItems="center" spacing={4}>
             <Grid item container justify="center" alignItems="center" spacing={4}>
               <Grid item>
                 <div className='index-title'>
