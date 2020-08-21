@@ -31,7 +31,7 @@ export default defineConfig({
       .use('pdf-with-file-loader')
       .loader('file-loader')
   },
-  favicon: '../public/log.jpeg',
+  favicon: '.favicon.ico',
   routes: [
     {
       path: '/',
@@ -44,11 +44,13 @@ export default defineConfig({
             {path: '/protect/archive', component: '@/pages/protect/archive/index'}
           ]
         },
+        { path: '/report', component: '@/pages/report/index' },
         {
           path: '/us',
           routes: [
             { path: '/us/council', component: '@/pages/us/council/index'},
-            { path: '/us/report', component: '@/pages/us/report/index'},
+            { path: '/us/team', component: '@/pages/us/team/index'},
+            // { path: '/us/report', component: '@/pages/us/report/index'},
             { path: '/us/timeline', component: '@/pages/us/timeline/index'},
           ]
         },

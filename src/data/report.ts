@@ -1,5 +1,6 @@
 import r2017ac from './assets/reports/r2017ac.jpeg';
 import r2018se2 from './assets/reports/r2018se2.jpg';
+import r2018se3 from './assets/reports/r2018se3.jpg';
 import r2018se4 from './assets/reports/r2018se4.jpg';
 import r2018ac from './assets/reports/r2018ac.jpeg';
 import r2019se1 from './assets/reports/r2019se1.jpg';
@@ -8,6 +9,7 @@ import r2019se3 from './assets/reports/r2019se3.jpg';
 import r2019se4 from './assets/reports/r2019se4.jpg';
 import r2019ac from './assets/reports/r2019ac.jpeg';
 import r2020se1 from './assets/reports/r2020se1.png';
+import r2020se2 from './assets/reports/r2020se2.jpg';
 import r2017a from './assets/reports/r2017a.pdf';
 import r2018a from './assets/reports/r2018a.pdf';
 import r2019a from './assets/reports/r2019a.pdf';
@@ -28,6 +30,14 @@ const data = [
     href: r2018se2,
     down: '云山保护2018第二季度季报.jpg',
     category:['长臂猿种群保护与管理国际研讨会', '科研检测', '保山高黎贡白眉长臂猿保护实施方案', '六一宣传活动', '时间线记事']
+  },
+  {
+    isAnnual: false,
+    name: '2018年-第三季度',
+    src: r2018se3,
+    href: r2018se3,
+    down: '云山保护2018第三季度季报.jpg',
+    category:['反盗猎宣传', '生物多样性嘉年华', '99公益日', '时间线记事']
   },
   {
     isAnnual: false,
@@ -92,6 +102,14 @@ const data = [
     href: r2020se1,
     down: '云山保护2020第一季度季报.png',
     category:['云端护猿基地', '云山未来讨论会', '长臂猿栖息地社区调查', '空缺调查', '2019年报出炉', '云山记事']
+  },
+  {
+    isAnnual: false,
+    name: '2020年-第二季度',
+    src: r2020se2,
+    href: r2020se2,
+    down: '云山保护2020第二季度季报.png',
+    category:['《天行情歌》首发', '云山保护五周年啦', '云端护猿基地', '苏典乡土自然教育考察', '《德宏高黎贡白眉长臂猿保护合作框架协议》', '云山记事']
   }
 ]
 

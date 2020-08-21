@@ -44,12 +44,13 @@ const BasicLayout: React.FC = (props) => {
             { path: '/protect/archive', name: intl.formatMessage({id: 'menu.protect.archive'}) },
           ]
         },
+        { path: '/report', name: intl.formatMessage({id: 'menu.report'}) },
         {
           path: '/us',
           name: intl.formatMessage({id: 'menu.us'}),
           routes: [
             { path: '/us/council', name: intl.formatMessage({id: 'menu.us.council'}) },
-            { path: '/us/report', name: intl.formatMessage({id: 'menu.us.report'}) },
+            { path: '/us/team', name: intl.formatMessage({id: 'menu.us.team'}) },
             { path: '/us/timeline', name: intl.formatMessage({id: 'menu.us.timeline'}) },
           ]
         },
@@ -102,12 +103,6 @@ const BasicLayout: React.FC = (props) => {
                 key: 'yunshan',
                 title: '云山保护',
                 href: 'http://www.cloudmountain.cn/',
-                blankTarget: true,
-              },
-              {
-                key: 'weibo',
-                title: <WeiboOutlined />,
-                href: 'https://weibo.com/yunshanbaohu',
                 blankTarget: true,
               },
               {

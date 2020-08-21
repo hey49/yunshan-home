@@ -105,10 +105,11 @@ const Index: React.FC = (props) => {
         className='index-swiper'
         effect="fade"
         loop
+        autoplay
         pagination={{ clickable: true }}
         navigation>
         <SwiperSlide>
-          <a href='/us/report'>
+          <a href='/report'>
             <div>
               <div style={styles.authorBox}>
                 <div style={styles.authorText}>图/欧阳凯</div>

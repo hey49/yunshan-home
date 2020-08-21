@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import gibbon from '../public/gibbon.png';
 import { Link } from 'umi';
 import anime from 'animejs/lib/anime.es.js';
 import { Tooltip } from 'antd';
+import gibbon from '../data/assets/anchor/gibbon.png';
+import tree from '../data/assets/anchor/tree.png';
 
 
 const BasicAnchor: React.FC = (props) => {
@@ -10,7 +11,7 @@ const BasicAnchor: React.FC = (props) => {
   useEffect(() => {
     anime({
       targets: '#fix_gibbon',
-      rotate: [-10, 10],
+      rotate: [0, 50],
       loop: true,
       direction: 'alternate',
       duration: 2000,
@@ -18,14 +19,29 @@ const BasicAnchor: React.FC = (props) => {
     })
   }, []);
 
+  const styles = {
+    'tree': {
+      position: 'absolute',
+      width: '8vh',
+      marginLeft: '-3px'
+    },
+    'gibbon': {
+      position: 'absolute',
+      width: '4vh',
+      transformOrigin: '0% 0%',
+      marginLeft: '17px'
+    }
+  }
+
   return (
-    <Tooltip placement="rightTop" title="点击关注我们" color={'#8da745'}>
-      <div style={{position: 'fixed', bottom: '20px', left: '20px'}}>
-        <Link to='/contact'>
-          <img id='fix_gibbon' style={{height: '10vh', rotate: '-15', transformOrigin: '50% 0%'}} src={gibbon}></img>
-        </Link>
-      </div>
-    </Tooltip>
+    <a href='/contact'>
+      <Tooltip placement="right" title="点击关注我们" color={'#8da745'}>
+        <div style={{position: 'fixed', bottom: '100px', width:'7vh', marginLeft: '-24px'}}>
+            <img style={styles.tree} src={tree}></img>
+            <img id='fix_gibbon' style={styles.gibbon} src={gibbon}></img>
+        </div>
+      </Tooltip>
+    </a>
   )
 }
 

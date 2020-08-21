@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import { Card as MCard } from '@material-ui/core';
 import { Slider, Card, Modal, Button } from 'antd';
 import './index.less';
-import data from '../../../data/report';
+import data from '../../data/report';
 
 interface ReportProps {
   initCurr: number
@@ -15,6 +15,8 @@ const Report: React.FC<ReportProps> = (props) => {
   const intl = useIntl();
 
   const [curr, setCurr] = useState<number>(props.initCurr ? props.initCurr : 0);
+  const [picModal, setPicModal] = useState<boolean>(false);
+
 
   const passedStyle = {
     color: '#8da745'
@@ -29,18 +31,45 @@ const Report: React.FC<ReportProps> = (props) => {
     }
   })
 
-  // const renderPictureModal = () => {
-  //   return (
-  //     <Modal
-  //       title="Basic Modal"
-  //       visible={this.state.visible}
-  //       onOk={this.handleOk}
-  //       onCancel={this.handleCancel}
-  //     >
+  const renderPictureModal = () => {
+    return (
+      <Modal
+        width='70%'
+        title= {(
+          <div className='report-pic-viewer-title'>
+            {data[curr].down.split('.')[0]}
+          </div>
+        )}
+        visible={picModal}
+        footer={null}
+        onCancel={() => setPicModal(false)}
+      >
+        <div className='report-pic-viewer'>
+          <img className='report-pic-viewer' src={data[curr].href}></img>
+        </div>
+      </Modal>
+    )
+  }
 
-  //     </Modal>
-  //   )
-  // }
+  const renderPic = () => {
+    if (data[curr].isAnnual) {
+      return (
+        <a href={data[curr].href} target="_blank">
+          <div className='report-card' >
+            <img style={{width: '45vh'}} src={data[curr].src}></img>
+          </div>
+        </a>
+      )
+    } else {
+      return (
+        <div onClick={ () => setPicModal(true)}>
+          <div className='report-card' >
+            <img style={{width: '45vh'}} src={data[curr].src}></img>
+          </div>
+        </div>
+      )
+    }
+  }
 
   return (
     <div className='report-container'>
@@ -52,12 +81,13 @@ const Report: React.FC<ReportProps> = (props) => {
         </Grid>
         <Grid item xs={5} className='report-box' container direction='column' justify="flex-start" alignItems="center">
           <Grid item style={{margin: 'auto'}}>
-          {/* <a href={data[curr].href} download={data[curr].down}> */}
-            <a href={data[curr].href} >
-              <div className='report-card' >
-                <img style={{width: '45vh'}} src={data[curr].src}></img>
-              </div>
-            </a>
+            {renderPic()}
+
+          </Grid>
+          <Grid item>
+          <div className='report-tip'>
+              {'点击封面阅读'}
+            </div>
           </Grid>
         </Grid>
         <Grid item xs={2} className='report-box' container direction='column' justify="center" alignItems="flex-start">
@@ -67,12 +97,11 @@ const Report: React.FC<ReportProps> = (props) => {
                 {data[curr].category.map(item => <li>{item}</li>)}
               </ul>
             </div>
-            <div className='report-tip'>
-              {'点击封面下载'}
-            </div>
+
           </Grid>
         </Grid>
       </Grid>
+      {renderPictureModal()}
     </div>
   );
 }
