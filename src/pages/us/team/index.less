@@ -1,47 +1,41 @@
 @import '../../base.less';
 
-
-.swiper-button-prev {
-  color: @primary-color;
-}
-
-.swiper-button-next {
-  color: @primary-color;
-}
-
-.people-box {
-  width: 50vh;
+.team-container {
   position: relative;
 }
 
+.team-bg {
+  font-size: 90px;
+  transform: rotate(30deg);
+  top: 100px;
+  left: 100px;
+  color: @primary-color;
+  position: absolute;
+}
+
 .people-img {
-  width: 50vh;
+  width: 100%;
 }
 
 .people-container {
-  height: 70vh;
+  min-width: 200px;
+  margin-top: 10px;
 }
 
 .people-text {
   color: white;
   background-color: @primary-color;
   position: absolute;
-  padding: 3px;
-  left: 40px;
-  bottom: 0px;
+  padding: 13px;
 }
 
 .people-name {
   color: white;
-  font-size: 25px;
   padding: 10px;
   background-color: @primary-color;
   position: absolute;
-  left: 30px;
-  top: 10px
 }
 
 .team-swiper {
   width: 100vh;
 }
-

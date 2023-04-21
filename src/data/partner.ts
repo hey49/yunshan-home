@@ -1,9 +1,9 @@
-import partner from './assets/partner/partner.jpg';
+import partner from './assets/partner/partner.png';
 
 const data = [
   {
-    src: partner
+    src: partner,
   },
-]
+];
 
 export default data;
