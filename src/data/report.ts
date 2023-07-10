@@ -19,6 +19,8 @@ import r2019a from './assets/reports/r2019a.pdf';
 import r2020a from './assets/reports/r2020a.pdf';
 import r2021ac from './assets/reports/r2021ac.jpg';
 import r2021a from './assets/reports/r2021a.pdf';
+import r2022a from './assets/reports/r2022a.pdf';
+import r2022ac from './assets/reports/r2022ac.png';
 import r2021m12c from './assets/reports/r2021m12c.jpg';
 import r2021m12 from './assets/reports/r2021m12.pdf';
 import r2021m34c from './assets/reports/r2021m34c.jpg';
@@ -39,6 +41,12 @@ import r2022m56c from './assets/reports/r2022m56c.jpg';
 import r2022m56 from './assets/reports/r2022m56.pdf';
 import r2022m78 from './assets/reports/r2022m78.png';
 import r2022m910 from './assets/reports/r2022m910.jpeg';
+import r2022m1112 from './assets/reports/r2022m1112.pdf';
+import r2022m1112c from './assets/reports/r2022m1112c.png';
+import r2023m12 from './assets/reports/r2023m12.pdf';
+import r2023m12c from './assets/reports/r2023m12c.png';
+import r2023m34 from './assets/reports/r2023m34.pdf';
+import r2023m34c from './assets/reports/r2023m34c.png';
 
 const data = [
   {
@@ -403,6 +411,46 @@ const data = [
     src: r2022m910,
     href: r2022m910,
     down: '云山保护2022年9-10月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2022年11-12月',
+    sm: '2022-11-12',
+    src: r2022m1112c,
+    href: r2022m1112,
+    down: '云山保护2022年11-12月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: true,
+    isPdf: true,
+    name: '2022年',
+    sm: '2022',
+    src: r2022ac,
+    href: r2022a,
+    down: '云山保护2022年报.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2023年1-2月',
+    sm: '2023-1-2',
+    src: r2023m12c,
+    href: r2023m12,
+    down: '云山保护2023年1-2月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2023年3-4月',
+    sm: '2023-3-4',
+    src: r2023m34c,
+    href: r2023m34,
+    down: '云山保护2023年3-4月.pdf',
     category: [],
   },
 ];
