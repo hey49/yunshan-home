@@ -103,11 +103,7 @@ const Index: React.FC = props => {
                     <div className="index-sub-title">战略方向</div>
                   </Divider>
                   <Grid item xs={12} sm={10} md={8}>
-                    <div>
-                      开展以保护为目的的长臂猿及其他灵长类物种的调查和监测
-                    </div>
-                    <div>通过科普宣传提升公众对长臂猿保护的认知</div>
-                    <div>提供多样的公众参与保护工作的平台</div>
+                    <div>十年内在社区保护地实现长臂猿种群净增长</div>
                   </Grid>
                 </Grid>
               </Grid>

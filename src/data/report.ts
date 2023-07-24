@@ -51,7 +51,7 @@ import r2023m34c from './assets/reports/r2023m34c.png';
 const data = [
   {
     isAnnual: true,
-    name: '2017年',
+    name: '2017年报',
     sm: '2017',
     src: r2017ac,
     href: r2017a,
@@ -110,7 +110,7 @@ const data = [
   },
   {
     isAnnual: true,
-    name: '2018年',
+    name: '2018年报',
     sm: '2018',
     src: r2018ac,
     href: r2018a,
@@ -196,7 +196,7 @@ const data = [
   },
   {
     isAnnual: true,
-    name: '2019年',
+    name: '2019年报',
     sm: '2019',
     src: r2019ac,
     href: r2019a,
@@ -278,7 +278,7 @@ const data = [
   },
   {
     isAnnual: true,
-    name: '2020年',
+    name: '2020年报',
     sm: '2020',
     src: r2020ac,
     href: r2020a,
@@ -358,7 +358,7 @@ const data = [
   {
     isAnnual: true,
     isPdf: true,
-    name: '2021年',
+    name: '2021年报',
     sm: '2021',
     src: r2021ac,
     href: r2021a,
@@ -426,7 +426,7 @@ const data = [
   {
     isAnnual: true,
     isPdf: true,
-    name: '2022年',
+    name: '2022年报',
     sm: '2022',
     src: r2022ac,
     href: r2022a,
@@ -455,4 +455,4 @@ const data = [
   },
 ];
 
-export default data;
+export default data.reverse();

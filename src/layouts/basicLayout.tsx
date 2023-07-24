@@ -56,7 +56,11 @@ const BasicLayout: React.FC = props => {
             },
           ],
         },
-        { path: '/report', name: intl.formatMessage({ id: 'menu.report' }) },
+        {
+          path: '/report',
+          name: intl.formatMessage({ id: 'menu.report' }),
+          routes: [],
+        },
         {
           path: '/us',
           name: intl.formatMessage({ id: 'menu.us' }),
@@ -86,6 +90,7 @@ const BasicLayout: React.FC = props => {
         {
           path: '/donate',
           name: intl.formatMessage({ id: 'menu.donate' }),
+          routes: [],
         },
       ],
     },

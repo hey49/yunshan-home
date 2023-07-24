@@ -29,7 +29,7 @@ const Report: React.FC<ReportProps> = props => {
     masksBig[index] = {
       style: curr >= index ? passedStyle : null,
       label: item.isAnnual ? (
-        <strong style={{ fontSize: '24px' }}>{item.name}</strong>
+        <strong style={{ fontSize: '16px' }}>{item.name}</strong>
       ) : (
         <div>{item.name}</div>
       ),
@@ -44,12 +44,6 @@ const Report: React.FC<ReportProps> = props => {
     return (
       <Modal
         className="report-pic-viewer"
-        // width='45%'
-        // title= {(
-        //   <div className='report-pic-viewer-title'>
-        //     {data[curr].down.split('.')[0]}
-        //   </div>
-        // )}
         visible={picModal}
         footer={null}
         onCancel={() => setPicModal(false)}
@@ -95,7 +89,9 @@ const Report: React.FC<ReportProps> = props => {
       >
         <Grid item xs={3} sm={2} md={2} className="report-box">
           <Hidden xsDown>
-            <div style={{ height: '70vh', overflow: 'scroll' }}>
+            <div
+              style={{ height: '70vh', overflow: 'scroll', marginLeft: '-4vh' }}
+            >
               <Slider
                 style={{ height: '100vh' }}
                 tooltipVisible={false}
@@ -143,26 +139,6 @@ const Report: React.FC<ReportProps> = props => {
           <Grid item>
             <div className="report-tip">{'点击封面阅读'}</div>
           </Grid>
-        </Grid>
-        <Grid
-          item
-          xs={0}
-          sm={2}
-          className="report-box"
-          container
-          direction="column"
-          justify="center"
-          alignItems="flex-start"
-        >
-          <Hidden xsDown>
-            <div className="report-category">
-              <ul style={{ marginTop: '2px' }}>
-                {data[curr].category.map(item => (
-                  <li>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </Hidden>
         </Grid>
       </Grid>
       {renderPictureModal()}
