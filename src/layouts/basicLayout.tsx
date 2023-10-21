@@ -42,24 +42,106 @@ const BasicLayout: React.FC = props => {
               path: '/protect/archive',
               name: intl.formatMessage({ id: 'menu.protect.archive' }),
             },
+            // todo
+            // {
+            //   path: '/protect/others',
+            //   name: intl.formatMessage({ id: 'menu.protect.others' }),
+            // },
             {
-              path: '/protect/tianxing',
-              name: intl.formatMessage({ id: 'menu.protect.tianxing' }),
-            },
-            {
-              path: '/protect/concolor',
-              name: intl.formatMessage({ id: 'menu.protect.concolor' }),
-            },
-            {
-              path: '/protect/investigate',
-              name: intl.formatMessage({ id: 'menu.protect.investigate' }),
+              path: '/protect/knowledge',
+              name: intl.formatMessage({ id: 'menu.protect.knowledge' }),
             },
           ],
         },
         {
-          path: '/report',
-          name: intl.formatMessage({ id: 'menu.report' }),
-          routes: [],
+          path: '/programs',
+          name: intl.formatMessage({ id: 'menu.programs' }),
+          routes: [
+            {
+              path: '/programs/investigation',
+              name: intl.formatMessage({ id: 'menu.programs.investigation' }),
+              routes: [
+                {
+                  path: '/programs/investigation/empower',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.investigation.empower',
+                  }),
+                },
+                {
+                  path: '/programs/investigation/population',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.investigation.population',
+                  }),
+                },
+                {
+                  path: '/programs/investigation/habitat',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.investigation.habitat',
+                  }),
+                },
+                {
+                  path: '/programs/investigation/gene',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.investigation.gene',
+                  }),
+                },
+                {
+                  path: '/programs/investigation/cloud',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.investigation.cloud',
+                  }),
+                },
+                {
+                  path: '/programs/investigation/canteen',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.investigation.canteen',
+                  }),
+                },
+              ],
+            },
+            {
+              path: '/programs/community',
+              name: intl.formatMessage({ id: 'menu.programs.community' }),
+              routes: [
+                {
+                  path: '/programs/community/surround',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.community.surround',
+                  }),
+                },
+                {
+                  path: '/programs/community/education',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.community.education',
+                  }),
+                },
+                {
+                  path: '/programs/community/yingjiang',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.community.yingjiang',
+                  }),
+                },
+                {
+                  path: '/programs/community/lishu',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.community.lishu',
+                  }),
+                },
+              ],
+            },
+            {
+              path: '/programs/habitat',
+              name: intl.formatMessage({ id: 'menu.programs.habitat' }),
+              routes: [
+                {
+                  path: '/programs/habitat/qingshan',
+                  name: intl.formatMessage({
+                    id: 'menu.programs.habitat.qingshan',
+                  }),
+                },
+              ],
+            },
+          ],
         },
         {
           path: '/us',
@@ -72,6 +154,10 @@ const BasicLayout: React.FC = props => {
             {
               path: '/us/team',
               name: intl.formatMessage({ id: 'menu.us.team' }),
+            },
+            {
+              path: '/us/report',
+              name: intl.formatMessage({ id: 'menu.us.report' }),
             },
             {
               path: '/us/timeline',
@@ -88,9 +174,50 @@ const BasicLayout: React.FC = props => {
           ],
         },
         {
+          path: '/news',
+          name: intl.formatMessage({ id: 'menu.news' }),
+          routes: [
+            {
+              path: '/news/public',
+              name: intl.formatMessage({ id: 'menu.news.public' }),
+              routes: [
+                {
+                  path: '/news/public/gibbonday',
+                  name: intl.formatMessage({
+                    id: 'menu.news.public.gibbonday',
+                  }),
+                },
+                {
+                  path: '/news/public/illegal',
+                  name: intl.formatMessage({ id: 'menu.news.public.illegal' }),
+                },
+                {
+                  path: '/news/public/participation',
+                  name: intl.formatMessage({
+                    id: 'menu.news.public.participation',
+                  }),
+                },
+                {
+                  path: '/news/public/content',
+                  name: intl.formatMessage({ id: 'menu.news.public.content' }),
+                },
+              ],
+            },
+            {
+              path: '/news/media',
+              name: intl.formatMessage({ id: 'menu.news.media' }),
+            },
+          ],
+        },
+        {
           path: '/donate',
           name: intl.formatMessage({ id: 'menu.donate' }),
-          routes: [],
+          routes: [
+            {
+              path: '/donate/month',
+              name: intl.formatMessage({ id: 'menu.donate.month' }),
+            },
+          ],
         },
       ],
     },
