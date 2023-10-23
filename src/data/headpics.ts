@@ -1,4 +1,3 @@
-import p1 from './assets/programs/empower.jpeg';
 import pi1 from './assets/programs/pi1.png';
 import pi2 from './assets/programs/pi2.png';
 import pi3 from './assets/programs/pi3.png';
@@ -16,9 +15,6 @@ import np3 from './assets/programs/np3.png';
 import np4 from './assets/programs/np4.png';
 
 const data = {
-  p1: {
-    src: p1,
-  },
   pi1: {
     src: pi1,
   },

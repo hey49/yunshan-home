@@ -47,6 +47,8 @@ import r2023m12 from './assets/reports/r2023m12.pdf';
 import r2023m12c from './assets/reports/r2023m12c.png';
 import r2023m34 from './assets/reports/r2023m34.pdf';
 import r2023m34c from './assets/reports/r2023m34c.png';
+import r2023m56 from './assets/reports/r2023m56.pdf';
+import r2023m56c from './assets/reports/r2023m56c.png';
 
 const data = [
   {
@@ -451,6 +453,16 @@ const data = [
     src: r2023m34c,
     href: r2023m34,
     down: '云山保护2023年3-4月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2023年5-6月',
+    sm: '2023-5-6',
+    src: r2023m56c,
+    href: r2023m56,
+    down: '云山保护2023年5-6月.pdf',
     category: [],
   },
 ];

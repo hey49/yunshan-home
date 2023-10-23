@@ -11,6 +11,13 @@ import Grid from '@material-ui/core/Grid';
 import indexLog from '../../data/assets/index/indexLogo.png';
 import './index.less';
 import data from '../../data/index';
+import mediadata from '../../data/contact';
+import {
+  HomeOutlined,
+  GlobalOutlined,
+  PhoneOutlined,
+  MailOutlined,
+} from '@ant-design/icons';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -33,6 +40,204 @@ const styles = {
 const Index: React.FC = props => {
   const intl = useIntl();
 
+  const pics = mediadata[0];
+
+  const renderContactItem = (name: any, text: any) => {
+    return (
+      <Grid
+        item
+        xs={12}
+        sm={10}
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        spacing={2}
+      >
+        <Grid item xs={4} sm={2}>
+          {name}
+        </Grid>
+        <Grid item xs={8}>
+          {text}
+        </Grid>
+      </Grid>
+    );
+  };
+
+  const renderContact = () => {
+    return (
+      <>
+        <Divider>
+          <div className="contact-title">联系方式</div>
+        </Divider>
+        <Grid
+          item
+          xs={12}
+          container
+          // direction="column"
+          justify="center"
+          alignItems="center"
+          spacing={2}
+        >
+          {renderContactItem(
+            <div className="contact-item-title">
+              <HomeOutlined className="item-icon" />
+              地址:
+            </div>,
+            <div>云南省大理古城苍坪街56号床单厂艺术区C-2-2</div>,
+          )}
+          {renderContactItem(
+            <div className="contact-item-title">
+              <PhoneOutlined className="item-icon" />
+              电话:
+            </div>,
+            <div>0872-2504186</div>,
+          )}
+          {renderContactItem(
+            <div className="contact-item-title">
+              <GlobalOutlined className="item-icon" />
+              网站:
+            </div>,
+            <a href="https://www.cloudmountain.cn" target="_blank">
+              www.cloudmountain.cn
+            </a>,
+          )}
+          {renderContactItem(
+            <div className="contact-item-title">
+              <MailOutlined className="item-icon" />
+              邮件:
+            </div>,
+            <a href="mailto:info@cloudmountain.cn">info@cloudmountain.cn</a>,
+          )}
+        </Grid>
+      </>
+    );
+  };
+
+  const renderMedia = () => {
+    return (
+      <>
+        <Divider>
+          <div className="contact-title">关注我们</div>
+        </Divider>
+        <Grid
+          item
+          container
+          direction="column"
+          justify="center"
+          alignItems="center"
+          spacing={3}
+        >
+          <Grid
+            item
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={1}
+          >
+            <Grid
+              item
+              xs={12}
+              sm={2}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={1}
+            >
+              <Grid item xs={2}>
+                <img className="media-logo" src={pics.wechat}></img>
+              </Grid>
+              <Grid item xs={6}>
+                <img className="media-qr" src={pics.wechat_qr}></img>
+              </Grid>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={2}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={1}
+            >
+              <Grid item xs={2}>
+                <a href="https://weibo.com/p/1006065823202811" target="_blank">
+                  <img className="media-logo" src={pics.weibo}></img>
+                </a>
+              </Grid>
+              <Grid item xs={6}>
+                <img className="media-qr" src={pics.weibo_qr}></img>
+              </Grid>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={2}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={1}
+            >
+              <Grid item xs={2}>
+                <img className="media-logo" src={pics.tiktok}></img>
+              </Grid>
+              <Grid item xs={6}>
+                <img className="media-qr" src={pics.tiktok_qr}></img>
+              </Grid>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={2}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={1}
+            >
+              <Grid item xs={2}>
+                <img className="media-logo" src={pics.xiaohongshu}></img>
+              </Grid>
+              <Grid item xs={6}>
+                <img className="media-qr" src={pics.xiaohongshu_qr}></img>
+              </Grid>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={2}
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={1}
+            >
+              <Grid item xs={2}>
+                <a href="https://space.bilibili.com/402317570" target="_blank">
+                  <img className="media-logo" src={pics.bilibili}></img>
+                </a>
+              </Grid>
+              <Grid item xs={6}>
+                <img className="media-qr" src={pics.bilibili_qr}></img>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid
+            item
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={1}
+          ></Grid>
+        </Grid>
+      </>
+    );
+  };
   const renderUs = () => {
     return (
       <div className="full-page">
@@ -105,6 +310,8 @@ const Index: React.FC = props => {
                   <Grid item xs={12} sm={10} md={8}>
                     <div>十年内在社区保护地实现长臂猿种群净增长</div>
                   </Grid>
+                  <Grid>{renderContact()}</Grid>
+                  <Grid>{renderMedia()}</Grid>
                 </Grid>
               </Grid>
             </Card>
