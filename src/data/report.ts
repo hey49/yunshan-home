@@ -49,6 +49,10 @@ import r2023m34 from './assets/reports/r2023m34.pdf';
 import r2023m34c from './assets/reports/r2023m34c.png';
 import r2023m56 from './assets/reports/r2023m56.pdf';
 import r2023m56c from './assets/reports/r2023m56c.png';
+import r2023m78 from './assets/reports/r2023m78.pdf';
+import r2023m78c from './assets/reports/r2023m78c.png';
+import r2023m910 from './assets/reports/r2023m910.pdf';
+import r2023m910c from './assets/reports/r2023m910c.png';
 
 const data = [
   {
@@ -463,6 +467,26 @@ const data = [
     src: r2023m56c,
     href: r2023m56,
     down: '云山保护2023年5-6月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2023年7-8月',
+    sm: '2023-7-8',
+    src: r2023m78c,
+    href: r2023m78,
+    down: '云山保护2023年7-8月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2023年9-10月',
+    sm: '2023-9-10',
+    src: r2023m910c,
+    href: r2023m910,
+    down: '云山保护2023年9-10月.pdf',
     category: [],
   },
 ];

@@ -148,6 +148,10 @@ const BasicLayout: React.FC = props => {
           name: intl.formatMessage({ id: 'menu.us' }),
           routes: [
             {
+              path: '/us/will',
+              name: "使命愿景"
+            },
+            {
               path: '/us/council',
               name: intl.formatMessage({ id: 'menu.us.council' }),
             },
@@ -177,31 +181,26 @@ const BasicLayout: React.FC = props => {
           path: '/news',
           name: intl.formatMessage({ id: 'menu.news' }),
           routes: [
+
             {
-              path: '/news/public',
-              name: intl.formatMessage({ id: 'menu.news.public' }),
-              routes: [
-                {
-                  path: '/news/public/gibbonday',
-                  name: intl.formatMessage({
-                    id: 'menu.news.public.gibbonday',
-                  }),
-                },
-                {
-                  path: '/news/public/illegal',
-                  name: intl.formatMessage({ id: 'menu.news.public.illegal' }),
-                },
-                {
-                  path: '/news/public/participation',
-                  name: intl.formatMessage({
-                    id: 'menu.news.public.participation',
-                  }),
-                },
-                {
-                  path: '/news/public/content',
-                  name: intl.formatMessage({ id: 'menu.news.public.content' }),
-                },
-              ],
+              path: '/news/gibbonday',
+              name: intl.formatMessage({
+                id: 'menu.news.public.gibbonday',
+              }),
+            },
+            {
+              path: '/news/illegal',
+              name: intl.formatMessage({ id: 'menu.news.public.illegal' }),
+            },
+            {
+              path: '/news/participation',
+              name: intl.formatMessage({
+                id: 'menu.news.public.participation',
+              }),
+            },
+            {
+              path: '/news/content',
+              name: intl.formatMessage({ id: 'menu.news.public.content' }),
             },
             {
               path: '/news/media',
@@ -210,13 +209,17 @@ const BasicLayout: React.FC = props => {
           ],
         },
         {
-          path: '/donate',
-          name: intl.formatMessage({ id: 'menu.donate' }),
+          path: '/support',
+          name: intl.formatMessage({ id: 'menu.support' }),
           routes: [
             {
-              path: '/donate/month',
-              name: intl.formatMessage({ id: 'menu.donate.month' }),
+              path: '/support/month',
+              name: intl.formatMessage({ id: 'menu.support.month' }),
             },
+            // {
+            //   path: '/support/intern',
+            //   name: intl.formatMessage({ id: 'menu.support.intern' }),
+            // },
           ],
         },
       ],

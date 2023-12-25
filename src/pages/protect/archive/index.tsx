@@ -97,7 +97,9 @@ export default props => {
               style={{ marginTop: 10 }}
               onClick={playAudio}
               icon={isPlaying ? <PauseOutlined /> : <SoundOutlined />}
-            />
+            >
+              听声音
+            </Button>
           </Grid>
           <Grid item xs={10} sm={9} md={9}>
             <Tabs

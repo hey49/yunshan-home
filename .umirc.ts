@@ -31,8 +31,8 @@ export default defineConfig({
       .loader('file-loader');
     config.module
       .rule('media')
-      .test(/\.(mp3|4)$/)
-      .use('file-loader')
+      .test(/\.mp(3|4)$/)
+      .use('file-loader?')
       .loader(require.resolve('file-loader'));
   },
   favicon: '.favicon.ico',
@@ -121,20 +121,20 @@ export default defineConfig({
           path: '/news',
           routes: [
             {
-              path: '/news/public/gibbonday',
-              component: '@/pages/news/public/gibbonday',
+              path: '/news/gibbonday',
+              component: '@/pages/news/gibbonday',
             },
             {
-              path: '/news/public/illegal',
-              component: '@/pages/news/public/illegal',
+              path: '/news/illegal',
+              component: '@/pages/news/illegal',
             },
             {
-              path: '/news/public/participation',
-              component: '@/pages/news/public/participation',
+              path: '/news/participation',
+              component: '@/pages/news/participation',
             },
             {
-              path: '/news/public/content',
-              component: '@/pages/news/public/content',
+              path: '/news/content',
+              component: '@/pages/news/content',
             },
             { path: '/news/media', component: '@/pages/news/media' },
           ],
@@ -142,6 +142,7 @@ export default defineConfig({
         {
           path: '/us',
           routes: [
+            { path: '/us/will', component: '@/pages/us/will/index' },
             { path: '/us/council', component: '@/pages/us/council/index' },
             { path: '/us/team', component: '@/pages/us/team/index' },
             { path: '/us/report', component: '@/pages/report/index' },
@@ -151,9 +152,16 @@ export default defineConfig({
           ],
         },
         {
-          path: '/donate',
+          path: '/support',
           routes: [
-            { path: '/donate/month', component: '@/pages/donate/index' },
+            {
+              path: '/support/month',
+              component: '@/pages/support/donate/index',
+            },
+            {
+              path: '/support/intern',
+              component: '@/pages/support/intern/index',
+            },
           ],
         },
         // legacy
