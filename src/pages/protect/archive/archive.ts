@@ -24,7 +24,7 @@ const data = [
       weight: '6 - 8.5',
       height: '60 - 90',
     },
-    IUCN: 'IUCN等级：EN（濒危），被列为全球最濒危的25种灵长类',
+    IUCN: 'EN（濒危），被列为全球最濒危的25种灵长类',
     chineseLevel: '1级',
     distribution: '中国、缅甸。中国分布：云南西部怒江以西的保山、腾冲和盈江',
     amount: '不足150只',

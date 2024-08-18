@@ -98,7 +98,7 @@ export default props => {
               onClick={playAudio}
               icon={isPlaying ? <PauseOutlined /> : <SoundOutlined />}
             >
-              听声音
+              {intl.formatMessage({ id: 'protect.archive.listen' })}
             </Button>
           </Grid>
           <Grid item xs={10} sm={9} md={9}>
@@ -144,32 +144,90 @@ export default props => {
           <Grid item xs={12} sm={6} md={5} className="archiveItem">
             <Card>
               <Descriptions title={data[selected].name} column={1}>
-                <Item label={<div style={descItemStyle}>学名</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.name' })}
+                    </div>
+                  }
+                >
                   <i>{data[selected].latin}</i>
                 </Item>
-                <Item label={<div style={descItemStyle}>分类</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.taxonomy' })}
+                    </div>
+                  }
+                >
                   <Text>{data[selected].classification.family}</Text>
-                  <Text>{`科_`}</Text>
+                  <Text>
+                    {intl.formatMessage({ id: 'protect.archive.family' })}
+                  </Text>
                   <Text>{data[selected].classification.genus}</Text>
-                  <Text>属</Text>
+                  <Text>
+                    {intl.formatMessage({ id: 'protect.archive.genera' })}
+                  </Text>
                 </Item>
-                <Item label={<div style={descItemStyle}>体型</div>}>
-                  <p>{`体重：${data[selected].body.weight}kg`}</p>
-                  <p>{`体长：${data[selected].body.height}cm`}</p>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.body' })}
+                    </div>
+                  }
+                >
+                  <p>
+                    {intl.formatMessage({ id: 'protect.archive.weight' })}
+                    {`${data[selected].body.weight}kg`}
+                  </p>
+                  <p>
+                    {intl.formatMessage({ id: 'protect.archive.length' })}
+                    {`${data[selected].body.height}cm`}
+                  </p>
                 </Item>
-                <Item label={<div style={descItemStyle}>IUCN等级</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.icun' })}
+                    </div>
+                  }
+                >
                   {data[selected].IUCN}
                 </Item>
-                <Item label={<div style={descItemStyle}>中国保护级别</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.status' })}
+                    </div>
+                  }
+                >
                   {data[selected].chineseLevel}
                 </Item>
-                <Item label={<div style={descItemStyle}>分布</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.range' })}
+                    </div>
+                  }
+                >
                   {data[selected].distribution}
                 </Item>
-                <Item label={<div style={descItemStyle}>数量</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.number' })}
+                    </div>
+                  }
+                >
                   {data[selected].amount}
                 </Item>
-                <Item label={<div style={descItemStyle}>特征</div>}>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.feature' })}
+                    </div>
+                  }
+                >
                   {data[selected].feature}
                 </Item>
               </Descriptions>

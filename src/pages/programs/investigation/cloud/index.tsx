@@ -10,7 +10,16 @@ const Tianxing: React.FC = props => {
 
   return (
     <div className="article-container">
-      <img className="title-img" src={data['pi4'].src}></img>
+      <div className="image-container">
+        <img
+          className="title-img"
+          src={data['pi4'].src}
+          alt="Image Title Loading"
+        ></img>
+        <div className="title-overlay">
+          {intl.formatMessage({ id: 'menu.programs.investigation.cloud' })}
+        </div>
+      </div>
       <Card>
         <Grid
           container
@@ -21,33 +30,42 @@ const Tianxing: React.FC = props => {
         >
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">立项理由</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.reason' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            板厂保护与科研基地（板厂基地）位于高黎贡山国家级自然保护区隆阳分局百花岭站辖区内。从2011年开始，范朋飞教授带领长臂猿科研团队在板厂持续开展了7年的长臂猿野外监测和科研工作。依托
-            2018 年和 2019 年腾讯 99
-            公益日众筹项目支持，云山保护“共建云端护猿基地”项目于 2019 年 1
-            月正式启动，与高黎贡山国家级自然保护区保山分局、中山大学签订了三方共建共管协议，并开展了长达两年整的驻站工作。
+            {intl.formatMessage({ id: 'programs.investigation.cloud.reason' })}
           </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">项目简介</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.description' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            板厂基地探索和实践了保护区、公益机构与科研团队三方共建共管模式，在两年内组建和培养了长期驻扎在野外的工作团队（1位站长，2-4位监测向导，2-4位研修生），开展了以天行长臂猿为旗舰物种的生态和行为学监测，设计并实施了公众可参与的科研与保护活动，连结了媒体及多种类型的跨界合作，让更多人了解天行长臂猿和高黎贡山的生物多样性。
+            {intl.formatMessage({
+              id: 'programs.investigation.cloud.description.1',
+            })}
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            长期野外监测积累了连续且高精度的天行长臂猿种群、行为及相关生态学数据，提供了鸣叫、食源植被、栖息地利用、共域动物、与人类活动关系等多方面有助于保护决策和行动的重要信息。
+            {intl.formatMessage({
+              id: 'programs.investigation.cloud.description.2',
+            })}
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            线上和实地的公众参与活动有机地桥接了真实且一线的保护行业与相关领域新生代力量，拓宽了参与自然保护工作的渠道。严谨的科学传播与积极的跨界合作让天行长臂猿及其相关生态环境、生物多样性保护和保护工作者的故事触及到了更广泛的人群。
+            {intl.formatMessage({
+              id: 'programs.investigation.cloud.description.3',
+            })}
           </Grid>
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">了解更多</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.learn' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>

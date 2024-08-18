@@ -149,7 +149,7 @@ const BasicLayout: React.FC = props => {
           routes: [
             {
               path: '/us/will',
-              name: "使命愿景"
+              name: intl.formatMessage({ id: 'menu.us.will' }),
             },
             {
               path: '/us/council',
@@ -181,7 +181,6 @@ const BasicLayout: React.FC = props => {
           path: '/news',
           name: intl.formatMessage({ id: 'menu.news' }),
           routes: [
-
             {
               path: '/news/gibbonday',
               name: intl.formatMessage({
@@ -270,11 +269,11 @@ const BasicLayout: React.FC = props => {
       footerRender={() => {
         return (
           <DefaultFooter
-            copyright={`${new Date().getFullYear()} 大理白族自治州\n云山生物多样性保护与研究中心`}
+            copyright={intl.formatMessage({ id: 'footer.copyright' })}
             links={[
               {
                 key: 'yunshan',
-                title: '云山保护',
+                title: intl.formatMessage({ id: 'footer.yunshan' }),
                 href: 'http://www.cloudmountain.cn/',
                 blankTarget: true,
               },
