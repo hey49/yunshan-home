@@ -77,20 +77,6 @@ export default {
   'about.focusing.1':
     'Achieve the growth of gibbon populations in community preservation areas within 10 years',
 
-  'protect.archive.listen': 'Listen',
-  'protect.archive.name': 'Scientific Name',
-  'protect.archive.taxonomy': 'Taxonomy',
-  'protect.archive.family': 'Family_',
-  'protect.archive.body': 'Shape',
-  'protect.archive.genera': 'Genera',
-  'protect.archive.weight': 'Weight: ',
-  'protect.archive.length': 'Body Length:',
-  'protect.archive.icun': 'IUCN Status',
-  'protect.archive.status': 'China’s Protection Status',
-  'protect.archive.range': 'Range',
-  'protect.archive.number': 'Number',
-  'protect.archive.feature': 'Features',
-
   'programs.learn': 'Learn More',
   'programs.reason': 'Purpose, Significance, Necessity, and Importance',
   'programs.description': 'Briefing and Achievements',
@@ -261,4 +247,85 @@ export default {
     'At the same time, we continued to launch original and co-branded creative peripherals such as stuffed animals, gibbon puzzles, knowledge manuals, game boxes, gibbon costumes, etc. We also planned events "All The Best" and "Year of the Tiger Spring Festival Guide" for the first anniversary of monthly donations. Together with some other activities, we have developed our relationship with the public closer.\n',
   'news.content.output.7':
     'As of July 2023, the number of followers on Cloudmountain Conservation’s WeChat official account has reached 19,000, the number of Weibo followers has reached 79,000, and the number of Bilibili followers has reached 5,000.\n',
+
+  'protect.archive.listen': 'Listen',
+  'protect.archive.name': 'Scientific Name',
+  'protect.archive.taxonomy': 'Taxonomy',
+  'protect.archive.body': 'Shape',
+  'protect.archive.weight': 'Weight: ',
+  'protect.archive.length': 'Body Length:',
+  'protect.archive.iucn': 'IUCN Status',
+  'protect.archive.status': 'China’s Protection Status',
+  'protect.archive.range': 'Range',
+  'protect.archive.number': 'Number',
+  'protect.archive.feature': 'Features',
+
+  'archive.gibbon1.name': 'Skywalker Hoolock Gibbon',
+  'archive.gibbon1.family': 'Hylobatidae family',
+  'archive.gibbon1.genus': 'Hoolock genera',
+  'archive.gibbon1.iucn': 'EN, The World’s 25 Most Endangered Primates',
+  'archive.gibbon1.chineseLevel':
+    'Wildlife under national first-class protection',
+  'archive.gibbon1.distribution':
+    'Distribution in China: Baoshan, Tengchong, and Yingjiang which are in the west of the Nujiang River in western Yunnan.',
+  'archive.gibbon1.amount': 'Less than 150 individuals ',
+  'archive.gibbon1.feature':
+    "Males and females are differently colored, adult males are brownish-black or dark brown with two distinctly separated white eyebrows, and the hairs on the top of the head are longer and draped to the back, thus flattening the top of the head. Although both have trademark white eyebrows, the Skywalker gibbon's eyebrows are not as thick as those of the Hoolock leuconedys. The male Skywalker Hoolock Gibbon does not have a white beard that matches the color of the eyebrows on his chin, and the female Sky walker Hoolock Gibbon does not have white eye rings as thick as those of the eastern white-browed gibbon.",
+
+  'archive.gibbon2.name': 'Hainan Gibbons',
+  'archive.gibbon2.family': 'Hylobatidae family',
+  'archive.gibbon2.genus': 'Nomascus genera',
+  'archive.gibbon2.iucn': 'CR, Critically Endangered',
+  'archive.gibbon2.chineseLevel':
+    'Wildlife under national first-class protection',
+  'archive.gibbon2.distribution': 'Hainan Island in the South China Sea',
+  'archive.gibbon2.amount': '37 individuals in 6 groups',
+  'archive.gibbon2.feature':
+    'Males and females are differently colored. Males: Black, slightly smaller than the females, with short, erect crown-like tufts of hair on top of the head, such as angry hair. Female: The whole body is golden, the back of the body for gray, brown or orange, the top of the head has a prismatic or polygonal black crown spot, just like wearing a small black hat. The pelage colors of Hainan gibbons changed several times during their life. The infants were born in pale yellow, gradually shifting from light to black at 3-month-old and turned into totally black at one year old. Around 6-7 years old, they reach sexually mature. Females are generally yellowish, while males are still all black.',
+
+  'archive.gibbon3.name': 'Eastern Black Creasted Gibbon',
+  'archive.gibbon3.family': 'Hylobatidae family',
+  'archive.gibbon3.genus': 'Nomascus genera',
+  'archive.gibbon3.iucn': 'CR, Critically Endangered',
+  'archive.gibbon3.chineseLevel':
+    'Wildlife under national first-class protection',
+  'archive.gibbon3.distribution': 'China, Vietnam',
+  'archive.gibbon3.amount': '33 individuals ',
+  'archive.gibbon3.feature':
+    'Males and females are differently colored. Males: Black all over, with some light brown hairs on the chest and no crown hairs on the top of the head. Females: Grayish-yellow, brownish-yellow, or orange on the back of the body, with long white hairs around the face, a large crown patch on the top of the head that usually extends beyond the shoulders and reaches the center of the back, and some light brown hairs on the chest. Unlike other taxa in genera Nomascus, females do not complete coat color change until adulthood. Cao-vit gibbon also has a polygamous family structure.',
+
+  'archive.gibbon4.name': 'Western Black Crested Gibbon',
+  'archive.gibbon4.family': 'Hylobatidae family',
+  'archive.gibbon4.genus': 'Nomascus genera',
+  'archive.gibbon4.iucn': 'CR, Critically Endangered',
+  'archive.gibbon4.chineseLevel':
+    'Wildlife under national first-class protection',
+  'archive.gibbon4.distribution':
+    'China, Laos, Vietnam. Distribution in China: Wuliangshan and Ailaoshan mountains, central Yunnan; Huanglianshan, Xilongshan mountains and Bajiao river, southern Yunnan; Yongde Mountain, western Yunnan.',
+  'archive.gibbon4.amount': 'about 1400 individuals ',
+  'archive.gibbon4.feature':
+    'There are four subspecies of the western black crowned gibbon. Males and females are distinct sexual dichromatism, with short, thick, and dense coats of hair. Juveniles are yellowish at birth and gradually turn black at about 1 year of age, males keep their black hair until adulthood, while females gradually change most of their body hair from black to grayish-yellow, brownish-yellow, or orange-yellow when they become sexually mature (only the top of the head, chest and abdomen remain black). Adult males have short, erect crown-like tufts of hair on the top of their heads; adult females have angular or polygonal black-brown crown spots on the top of their heads, and the black-brown hairs on the chest and abdomen of females gradually increase with aging. In addition to the typical monogamous family structure of the western black crested gibbon, there is also polygamy.',
+
+  'archive.gibbon5.name': 'Northern White-cheeked Gibbon',
+  'archive.gibbon5.family': 'Hylobatidae family',
+  'archive.gibbon5.genus': 'Nomascus genera',
+  'archive.gibbon5.iucn': 'CR Critically Endangered',
+  'archive.gibbon5.chineseLevel':
+    'Wildlife under national first-class protection',
+  'archive.gibbon5.distribution': 'China, Laos, Vietnam',
+  'archive.gibbon5.amount': 'Possibly extinct in the wild in China',
+  'archive.gibbon5.feature':
+    'Males and females are differently colored. Males are predominantly black with a patch of white hair growing on each side of the cheeks from the base of the chin down to just above the ears, and crown hairs bulging on the top of the head. Females have yellowish to orange body hair, a dark brown crown patch in a polygonal shape on the top of the head, a ring of either complete or incomplete white hairs on the face, no crown hairs, sparse dark brown on the chest and abdomen, and are generally black with males until sexual maturity. Both sexes have long and dense fur.',
+
+  'archive.gibbon6.name': 'White-handed Gibbon',
+  'archive.gibbon6.family': 'Hylobatidae family',
+  'archive.gibbon6.genus': 'Hylobates genera',
+  'archive.gibbon6.iucn': 'CR Critically Endangered',
+  'archive.gibbon6.chineseLevel':
+    'Wildlife under national first-class protection',
+  'archive.gibbon6.distribution':
+    'China, Laos, Myanmar, Thailand, Malaysia, Indonesia',
+  'archive.gibbon6.amount': 'Possibly extinct in the wild in China',
+  'archive.gibbon6.feature':
+    'There are five subspecies of White-handed Gibbons, which are classified based on pelage colors. The hands and feet are white or off-white, so they are called white-handed gibbons. Both sexes have two color patterns: dark (brown to black) and light (cream to tan), which are independent of sex and age, and vary according to distribution. All White-handed Gibbons have a ring of white hairs along the edge of the face from the cheeks to the lower jaw, outlining the face in a striking manner. White-handed Gibbons are monogamous in major, while some of them also have polygamous family structure.',
 };

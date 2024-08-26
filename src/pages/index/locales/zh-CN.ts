@@ -67,20 +67,6 @@ export default {
   'about.slogan.1': '和云山一起保护中国猿',
   'about.focusing.1': '十年内在社区保护地实现长臂猿种群净增长',
 
-  'protect.archive.listen': '听声音',
-  'protect.archive.name': '学名',
-  'protect.archive.taxonomy': '分类',
-  'protect.archive.family': '科_',
-  'protect.archive.genera': '属',
-  'protect.archive.body': '体型',
-  'protect.archive.weight': '体重：',
-  'protect.archive.length': '体长：',
-  'protect.archive.icun': 'IUCN等级',
-  'protect.archive.status': '中国保护级别',
-  'protect.archive.range': '分布',
-  'protect.archive.number': '数量',
-  'protect.archive.feature': '特征',
-
   'programs.reason': '立项理由',
   'programs.description': '项目简介与成果',
   'programs.learn': '了解更多',
@@ -243,4 +229,81 @@ export default {
     '同时，持续推出的天天玩偶、长臂猿生境拼图、知识手册、解密游戏盒、长臂猿服饰等原创和联名文创周边，策划的月捐一周年“样样好”活动、“虎年春节指南”等活动，都让我们与大众的关系更加紧密\n',
   'news.content.output.7':
     '截至2023年7月，云山保护微信公众号关注者达1.9万，微博粉丝数达7.9万，B站粉丝数达5000+\n',
+
+  'protect.archive.listen': '听声音',
+  'protect.archive.name': '学名',
+  'protect.archive.taxonomy': '分类',
+  // 'protect.archive.family': '科_',
+  // 'protect.archive.genera': '属',
+  'protect.archive.body': '体型',
+  'protect.archive.weight': '体重：',
+  'protect.archive.length': '体长：',
+  'protect.archive.iucn': 'IUCN等级',
+  'protect.archive.status': '中国保护级别',
+  'protect.archive.range': '分布',
+  'protect.archive.number': '数量',
+  'protect.archive.feature': '特征',
+
+  'archive.gibbon1.name': '天行长臂猿',
+  'archive.gibbon1.family': '长臂猿科',
+  'archive.gibbon1.genus': '白眉长臂猿属',
+  'archive.gibbon1.iucn': 'EN（濒危），被列为全球最濒危的25种灵长类',
+  'archive.gibbon1.chineseLevel': '1级',
+  'archive.gibbon1.distribution':
+    '中国、缅甸。中国分布：云南西部怒江以西的保山、腾冲和盈江',
+  'archive.gibbon1.amount': '不足150只',
+  'archive.gibbon1.feature':
+    '雌雄异色，成年雄性褐黑色或暗褐色，有两条明显分开的白色眼眉，头顶的毛较长而披向后方，故头顶扁平。虽然都有着标志性的白色眉毛，但天行长臂猿的眉毛并没有东部白眉长臂猿那么厚重。雄性天行长臂猿的下巴上没有和眉色配套的白胡子，而雌性天行长臂猿的白眼圈也不像东部白眉长臂猿的那么浓密。',
+
+  'archive.gibbon2.name': '海南长臂猿',
+  'archive.gibbon2.family': '长臂猿科',
+  'archive.gibbon2.genus': '冠长臂猿属',
+  'archive.gibbon2.iucn': '极危',
+  'archive.gibbon2.chineseLevel': '1级',
+  'archive.gibbon2.distribution': '海南岛',
+  'archive.gibbon2.amount': '6群37只',
+  'archive.gibbon2.feature':
+    '雌雄异色。雄性：通体黑色，体形比雌性略小，头顶有短而直立冠状簇毛，如怒发冲冠。雌性：全身金黄，体背为灰黄、棕黄或橙黄色，头顶有棱形或多角形黑色的冠斑，恰似戴了顶小黑帽。海南黑冠长臂猿一生中要变换几次颜色，刚出生时为浅黄色，3月龄毛色开始逐渐变暗，约1周岁时完全变黑，到6-7岁性成熟毛色才渐分雌雄，雌猿经过一年多的时间变成黄色的着装，而雄猿却还是一身黑衣。',
+
+  'archive.gibbon3.name': '东黑冠长臂猿',
+  'archive.gibbon3.family': '长臂猿科',
+  'archive.gibbon3.genus': '冠长臂猿属',
+  'archive.gibbon3.iucn': '极危',
+  'archive.gibbon3.chineseLevel': '1级',
+  'archive.gibbon3.distribution': '中国、越南',
+  'archive.gibbon3.amount': '33只',
+  'archive.gibbon3.feature':
+    '雌性异色。雄性：全身为黑色，胸部有部分浅褐色毛发，头顶冠毛不长。雌性：体背灰黄、棕黄或橙黄色，脸周有白色长毛，头顶冠斑面积较大，通常能超过肩部，达到背部中央，胸部有部分浅褐色毛发。不同于其它冠长臂猿属同类的是，雌性在接近成年前才完成被毛的变色。东黑冠长臂猿也存在一夫二妻的家庭结构。',
+
+  'archive.gibbon4.name': '西黑冠长臂猿',
+  'archive.gibbon4.family': '长臂猿科',
+  'archive.gibbon4.genus': '冠长臂猿属',
+  'archive.gibbon4.iucn': '极危',
+  'archive.gibbon4.chineseLevel': '1级',
+  'archive.gibbon4.distribution':
+    '中国、老挝、越南。中国分布：云南中部无量山、哀牢山，云南南部黄连山、西隆山、芭蕉河，云南西部永德大雪山',
+  'archive.gibbon4.amount': '约1400只',
+  'archive.gibbon4.feature':
+    '西黑冠长臂猿有4个亚种。雌雄异色，毛短而厚密。幼体刚出生均为淡黄色，在1岁左右逐渐变成黑色，雄性一直保持黑发至成年，雌性性成熟时则大部分体毛由黑色逐渐变成灰黄、棕黄或橙黄色（仅头顶、胸腹部遗留黑色）。成年雄性头顶有短而直立的冠状簇毛；成年雌性头顶有棱形或多角形黑褐色冠斑，随着年龄的增长，雌性胸腹黑褐色毛发逐渐增多。西黑冠长臂猿除典型的一夫一妻家庭结构外，还存在一夫二妻的现象。',
+
+  'archive.gibbon5.name': '北白颊长臂猿',
+  'archive.gibbon5.family': '长臂猿科',
+  'archive.gibbon5.genus': '冠长臂猿属',
+  'archive.gibbon5.iucn': '极危',
+  'archive.gibbon5.chineseLevel': '1级',
+  'archive.gibbon5.distribution': '中国、老挝、越南',
+  'archive.gibbon5.amount': '中国境内可能已经灭绝',
+  'archive.gibbon5.feature':
+    '雌雄异色。雄性以黑色为主，从下巴底部一直延伸至耳朵上方各有一块白色毛发生长在脸颊两侧，头顶冠毛隆起。雌性体毛呈淡黄色至桔黄色，头顶有暗褐色冠斑呈多角形，面部有一圈或完整或不完整的白毛，没有冠毛，胸腹的黑褐色稀少，性成熟之前与雄性一般都为黑色。两性毛发都长而密。',
+
+  'archive.gibbon6.name': '白掌长臂猿',
+  'archive.gibbon6.family': '长臂猿科',
+  'archive.gibbon6.genus': '长臂猿属',
+  'archive.gibbon6.iucn': '濒危',
+  'archive.gibbon6.chineseLevel': '1级',
+  'archive.gibbon6.distribution':
+    '中国、老挝、缅甸、泰国、马来西亚、印度尼西亚',
+  'archive.gibbon6.amount': '中国境内可能已经灭绝',
+  'archive.gibbon6.feature':
+    '白掌长臂猿有5个亚种，以体毛色泽的变化为划分依据。手、足为白色或淡白色，故称白掌长臂猿。两性均有暗（棕色到黑色）、淡（奶白色到棕黄色）两种色型，色型与性别、年龄无关，随着分布地的不同呈现差异。所有白掌长臂猿的面部边缘经面颊到下颌有一圈白毛形成的圆环，把脸部勾勒得十分醒目。白掌长臂猿主要营一夫一妻的家庭结构，部分家庭中有长期的一妻二夫现象。',
 };

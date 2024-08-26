@@ -16,21 +16,44 @@
 
 .title-overlay {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 45px;
   text-align: center;
   width: 100%;
   padding: 0 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+  @media (max-width: 767px) {
+    font-size: 1.25em;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 2em;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 4em;
+  }
 }
 
 .tianxing-title {
   color: @primary-color;
   text-align: center;
-  font-size: 34px;
+
+  @media (max-width: 767px) {
+    font-size: 1em;
+    white-space: normal;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 2em;
+  }
 }
 
 .tianxing-sub-title {
