@@ -51,16 +51,26 @@ export default {
   'footer.copyright': `${new Date().getFullYear()} 大理白族自治州\n云山生物多样性保护与研究中心`,
 
   'home.button.learn': 'Learn More',
-  'home.video': 'CLOUD MOUNTAIN',
-  'home.knowledge': 'What You Need to Know About Gibbons',
-  'home.report': 'Cloudmountain 2022 Work Report',
   'home.canteen': 'Gibbon Cafeteria Survey Program',
-  'home.canteen.content':
-    'Studies on Diets and Foraging Behavior of Skywalker Hoolock Gibbon',
-  'home.qingshan': 'Project Qingshan',
-  'home.qingshan.subtitle':
-    'Enhancing Gibbon’s Habitat Quality With Ecologically Friendly Plantation',
-  'home.donate': 'Become Monthly Donors',
+  'home.empower': 'Community Empowerment',
+  'home.habitat':
+    'Enhancing Gibbon’s Habitat Quality with Ecologically Friendly Plantation',
+  'home.donate': 'Donate',
+  'home.eat': 'Gibbon Cafeteria Survey Program',
+  'home.tree': 'Planting trees for Skywalker Gibbons',
+  'home.actions': 'Actions in Community',
+
+  'home.title': 'Cloud Mountain Conservation',
+  'home.description':
+    "We take the conservation of China's endangered flagship species such as the gibbon as a breakthrough and then protect the most biodiverse forest ecosystems in Southwest China.",
+  'home.support': 'Support Us',
+  'home.canteen.sub':
+    'Studies on diets and foraging behavior of the Skywalker Hoolock Gibbon',
+  'home.empower.sub': 'Protecting Gibbon together with the Lisu community',
+  'home.habitat.sub':
+    "Restoring Gibbon's habitat and enhancing habitat quality",
+  'home.sub1': 'Our Actions',
+  'home.sub2': 'Our Stories',
 
   'about.mission': 'Mission',
   'about.vision': 'Vision',
@@ -78,9 +88,8 @@ export default {
     'Achieve the growth of gibbon populations in community preservation areas within 10 years',
 
   'programs.learn': 'Learn More',
-  'programs.reason': 'Purpose, Significance, Necessity, and Importance',
+  'programs.reason': 'Purpose, Significance, \n Necessity, and Importance',
   'programs.description': 'Briefing and Achievements',
-
   'programs.investigation.empower.reason':
     'During our cooperation with authorities of protected areas, it turns out that frontline rangers often have fewer opportunities to receive systematic and professional training in field surveys, as well as methods and tools for patrolling and monitoring. At the beginning of Cloudmountain establishment, we have applied for the Lancang River Conservation Project from Shan Shui Conservation Center, which supported the Western Black-crowned Gibbon Conservation Ability Enhancement Training Project at Mt. Yongde, Yunnan. The program was followed by training in gibbon song survey and monitoring methods, trap camera deployment, use of binoculars and other skills in Yingjiang and Changning. About 40 rangers were trained, 10 of whom have become the striking force in gibbon monitoring and field surveys in the various protected areas.',
   'programs.investigation.empower.description':
@@ -328,4 +337,16 @@ export default {
   'archive.gibbon6.amount': 'Possibly extinct in the wild in China',
   'archive.gibbon6.feature':
     'There are five subspecies of White-handed Gibbons, which are classified based on pelage colors. The hands and feet are white or off-white, so they are called white-handed gibbons. Both sexes have two color patterns: dark (brown to black) and light (cream to tan), which are independent of sex and age, and vary according to distribution. All White-handed Gibbons have a ring of white hairs along the edge of the face from the cheeks to the lower jaw, outlining the face in a striking manner. White-handed Gibbons are monogamous in major, while some of them also have polygamous family structure.',
+
+  'footer.follow': 'Follow Us',
+  'footer.wechat': 'Wechat',
+  'footer.xhs.line1': 'Little',
+  'footer.xhs.line2': 'Red Book',
+  'footer.weibo': 'Weibo',
+  'footer.contact': 'Contact',
+  'footer.address':
+    'Address: C-2-2 Art Zone, No.56 Chuangdanchang, Taping Street, Dali City, Yunnan Province',
+  'footer.tel': 'Tel: 0872-2504186',
+  'footer.site': 'Official Website: www.cloudmountain.cn',
+  'footer.email': 'Email: info@cloudmountain.cn',
 };

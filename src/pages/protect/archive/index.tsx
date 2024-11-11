@@ -87,7 +87,7 @@ export default props => {
           xs={12}
           sm={10}
           md={8}
-          direction="row"
+          direction={{ xs: 'column', md: 'row' }}
           justify="flex-start"
           alignItems="center"
         >
@@ -111,7 +111,10 @@ export default props => {
               type="card"
             >
               {data.map(item => (
-                <Tabs.TabPane tab={item.name} key={item.key.toString()} />
+                <Tabs.TabPane
+                  tab={intl.formatMessage({ id: item.name })}
+                  key={item.key.toString()}
+                />
               ))}
             </Tabs>
           </Grid>
@@ -143,7 +146,10 @@ export default props => {
           </Grid>
           <Grid item xs={12} sm={6} md={5} className="archiveItem">
             <Card>
-              <Descriptions title={data[selected].name} column={1}>
+              <Descriptions
+                title={intl.formatMessage({ id: data[selected].name })}
+                column={1}
+              >
                 <Item
                   label={
                     <div style={descItemStyle}>
@@ -160,14 +166,22 @@ export default props => {
                     </div>
                   }
                 >
-                  <Text>{data[selected].classification.family}</Text>
                   <Text>
-                    {intl.formatMessage({ id: 'protect.archive.family' })}
+                    {intl.formatMessage({
+                      id: data[selected].classification.family,
+                    })}
+                    &nbsp;
+                    {intl.formatMessage({
+                      id: data[selected].classification.genus,
+                    })}
                   </Text>
-                  <Text>{data[selected].classification.genus}</Text>
-                  <Text>
-                    {intl.formatMessage({ id: 'protect.archive.genera' })}
-                  </Text>
+                  {/*<Text>*/}
+                  {/*  {intl.formatMessage({ id: 'protect.archive.family' })}*/}
+                  {/*</Text>*/}
+                  {/*<Text>{intl.formatMessage({id: data[selected].classification.genus})}</Text>*/}
+                  {/*<Text>*/}
+                  {/*  {intl.formatMessage({ id: 'protect.archive.genera' })}*/}
+                  {/*</Text>*/}
                 </Item>
                 <Item
                   label={
@@ -179,6 +193,7 @@ export default props => {
                   <p>
                     {intl.formatMessage({ id: 'protect.archive.weight' })}
                     {`${data[selected].body.weight}kg`}
+                    &nbsp;
                   </p>
                   <p>
                     {intl.formatMessage({ id: 'protect.archive.length' })}
@@ -188,11 +203,11 @@ export default props => {
                 <Item
                   label={
                     <div style={descItemStyle}>
-                      {intl.formatMessage({ id: 'protect.archive.icun' })}
+                      {intl.formatMessage({ id: 'protect.archive.iucn' })}
                     </div>
                   }
                 >
-                  {data[selected].IUCN}
+                  {intl.formatMessage({ id: data[selected].IUCN })}
                 </Item>
                 <Item
                   label={
@@ -201,7 +216,7 @@ export default props => {
                     </div>
                   }
                 >
-                  {data[selected].chineseLevel}
+                  {intl.formatMessage({ id: data[selected].chineseLevel })}
                 </Item>
                 <Item
                   label={
@@ -210,7 +225,7 @@ export default props => {
                     </div>
                   }
                 >
-                  {data[selected].distribution}
+                  {intl.formatMessage({ id: data[selected].distribution })}
                 </Item>
                 <Item
                   label={
@@ -219,7 +234,7 @@ export default props => {
                     </div>
                   }
                 >
-                  {data[selected].amount}
+                  {intl.formatMessage({ id: data[selected].amount })}
                 </Item>
                 <Item
                   label={
@@ -228,7 +243,7 @@ export default props => {
                     </div>
                   }
                 >
-                  {data[selected].feature}
+                  {intl.formatMessage({ id: data[selected].feature })}
                 </Item>
               </Descriptions>
             </Card>

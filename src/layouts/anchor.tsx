@@ -22,12 +22,14 @@ const BasicAnchor: React.FC = props => {
       position: 'absolute',
       width: '8vh',
       marginLeft: '-3px',
+      zIndex: 5,
     },
     gibbon: {
       position: 'absolute',
       width: '4vh',
       transformOrigin: '0% 0%',
       marginLeft: '17px',
+      zIndex: 5,
     },
   };
 
@@ -41,6 +43,7 @@ const BasicAnchor: React.FC = props => {
               bottom: '100px',
               width: '7vh',
               marginLeft: '-24px',
+              zIndex: 5,
             }}
           >
             <img style={styles.tree} src={tree}></img>

@@ -44,15 +44,23 @@ export default {
   'footer.yunshan': '云山保护',
   'footer.copyright': `${new Date().getFullYear()} 大理白族自治州\n云山生物多样性保护与研究中心`,
 
+  'home.title': '云山保护',
+  'home.description':
+    '我们以保护长臂猿等中国的濒危旗舰物种为突破口，进而保护生物多样性最为丰富的西南森林生态系统\n',
+  'home.support': '支持我们',
   'home.button.learn': '了解更多',
-  'home.video': '云山保护',
-  'home.knowledge': '长臂猿科普介绍',
-  'home.report': '云山保护2022年年报',
-  'home.canteen': '长臂猿食堂调查计划',
-  'home.canteen.content': '长臂猿食性与取食行为调查',
-  'home.qingshan': '青山项目',
-  'home.qingshan.subtitle': '生态种植提升长臂猿栖息地质量',
-  'home.donate': '成为月捐人',
+  'home.canteen': '长臂猿食堂调查',
+  'home.canteen.sub': '天行长臂猿食性与习性调研',
+  'home.empower': '社区保护与赋能',
+  'home.empower.sub': '和傈僳族老乡一起保护家乡的长臂猿',
+  'home.habitat': '长臂猿栖息地恢复与质量提升',
+  'home.habitat.sub': '长臂猿栖息地恢复与质量提升',
+  'home.donate': '月捐保护中国猿',
+  'home.eat': '如果不能把低海拔的栖息地让给它们，至少要让它们吃得更好',
+  'home.tree': '种树两年多，长臂猿的家怎么样了',
+  'home.actions': '大熊猫有 1864 只，但它们只有不到 150 只',
+  'home.sub1': '保护行动',
+  'home.sub2': '我们的故事',
 
   'about.mission': '使命',
   'about.vision': '愿景',
@@ -76,7 +84,14 @@ export default {
   'programs.investigation.empower.description':
     '云山保护在不同项目执行过程中都非常注重赋能让保护区和林业部门的护林员在巡护、监测和宣传上变得更专业。永德大雪山西黑冠长臂猿保护能力提升培训项目中，我们通过与监测队员回顾西黑冠长臂猿规范化巡护监测方案，评估方案实施效果，根据反馈对方案进行必要的调整和改进。通过对监测队员进行进一步监测技术指导，提升监测队员的巡护技术能力。后续在盈江县和昌宁县分别开展过长臂猿鸣声调查监测方法、红外相机布设、望远镜使用等技能培训，在统一的监测方法和数据记录方法培训之后，云山的项目人员对数据进行了分析并将下一步调整的建议反馈给监测队员和保护主管部门，帮助他们从日常的巡护监测中收获更大的成就感。',
 
-  'programs.investigation.canteen.reason': '',
+  'programs.investigation.canteen.reason.1':
+    '在天行长臂猿的主要分布区——云南省德宏傣族景颇族自治州盈江县，云山保护联合云南铜壁关省级自然保护区开展了一次种群空缺调查，调查发现盈江县的天行长臂猿绝大部分种群分布在保护区外的国有林、集体林和个人林里。\n',
+  'programs.investigation.canteen.reason.2':
+    '其中盈江县苏典乡拉马河片区的天行长臂猿种群的分布情况对保护来说格外具有价值。这里的栖息地破碎化严重，然而在约13平方公里的范围内却生活着5个家庭群和2只独猿，这里的长臂猿们的活动范围比高黎贡国家级自然保护区内的天行长臂猿种群还要集中。有充分的证据表明，像拉马河片区这样保护区外的栖息地比保护区内受到了更多人为干扰因素如道路、砍伐、森林退化、周边社区开展日常生产生活活动等造成的影响，但为何这里却承载着盈江县分布最集中的天行长臂猿种群？\n',
+  'programs.investigation.canteen.reason.3':
+    '我们针对上面的问题提出一个可能的答案——保护区外存在的人为干扰、栖息地退化等因素虽然对长臂猿的生存构成了负面影响，但同时也对天行长臂猿的潜在食物竞争者起到了抑制作用，特别是其他灵长类动物；从而使得保护区外的天行长臂猿比如拉马河片区的种群的取食竞争压力小于保护区内。\n',
+  'programs.investigation.canteen.reason.4':
+    '为了验证这个猜想，我们希望在盈江县拉马河片区的天行长臂猿栖息地内开展一次针对长臂猿食堂的调查。我们将选取每个季节对于天行长臂猿最重要的食物树种，通过在林层系统布设红外相机，记录食物树被取食的全过程和所有的取食者，并和保护区内的相关数据进行对比。\n',
   'programs.investigation.canteen.description.1':
     '2022年9月，通过腾讯公益“99公益日”的筹款，我们开展了“长臂猿食堂调查计划”。通过林层红外相机调查，可以对已有的保护区内天行长臂猿的食性数据进行验证，收集未习惯化的长臂猿种群的取食行为数据，并得到一个在天行长臂猿的食堂干饭的物种名单，最终从食物的角度对于栖息地恢复提出建议。',
   'programs.investigation.canteen.description.2':
@@ -306,4 +321,15 @@ export default {
   'archive.gibbon6.amount': '中国境内可能已经灭绝',
   'archive.gibbon6.feature':
     '白掌长臂猿有5个亚种，以体毛色泽的变化为划分依据。手、足为白色或淡白色，故称白掌长臂猿。两性均有暗（棕色到黑色）、淡（奶白色到棕黄色）两种色型，色型与性别、年龄无关，随着分布地的不同呈现差异。所有白掌长臂猿的面部边缘经面颊到下颌有一圈白毛形成的圆环，把脸部勾勒得十分醒目。白掌长臂猿主要营一夫一妻的家庭结构，部分家庭中有长期的一妻二夫现象。',
+
+  'footer.follow': '关注我们',
+  'footer.wechat': '公众号',
+  'footer.xhs.line1': '小红书',
+  'footer.xhs.line2': ' ',
+  'footer.weibo': '微博',
+  'footer.contact': '联系方式',
+  'footer.address': '地址: 云南省大理市城塔坪街56号床单厂 艺术区C-2-2',
+  'footer.tel': '电话: 0872-2504186',
+  'footer.site': '网址: www.cloudmountain.cn',
+  'footer.email': '邮箱: info@cloudmountain.cn',
 };
