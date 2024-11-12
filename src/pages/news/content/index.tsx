@@ -132,7 +132,12 @@ const Tianxing: React.FC = props => {
   };
   return (
     <div className="article-container">
-      <img className="title-img" src={data['np4'].src}></img>
+      <div className="image-container">
+        <img className="title-img" src={data['np4'].src}></img>
+        <div className="title-overlay">
+          {intl.formatMessage({ id: 'menu.news.public.content' })}
+        </div>
+      </div>{' '}
       <Card>
         <Grid
           container
@@ -143,37 +148,43 @@ const Tianxing: React.FC = props => {
         >
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">立项理由</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.reason' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            对于公众来说，长臂猿及其保护工作还有很大的科普空间。云山保护已入驻包括但不限于微信公众号、微博、B站、快手、抖音、小红书等的社交媒体平台，通过优质图文影音、直播、讲座等方式，持续产出长臂猿及相关物种的科普内容、鼓励保护工作者以多样的角度出发分享保护工作故事，提高公众对长臂猿的关注和长臂猿保护工作重要性的认知，也让更多人了解并加入长臂猿保护的队伍中来。
+            {intl.formatMessage({ id: 'news.content.reason' })}
           </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">项目简介</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'news.output' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            云山不断破圈，尝试不同领域、不同形式的内容产出：
+            {intl.formatMessage({ id: 'news.content.output.1' })}
             <br />
-            《人民日报》、《中国国家地理》、《少年科学画报》、果壳等媒体平台对天行长臂猿及其保护工作进行了多元报道；
+            {intl.formatMessage({ id: 'news.content.output.2' })}
             <br />
-            @Alex绝对是个妞儿、@滇西小哥等大V博主探访项目地，为我们带来了更广泛的关注；
+            {intl.formatMessage({ id: 'news.content.output.3' })}
             <br />
-            我们也把保护故事带到了播客节目“故事FM”、“声东击西”中，《寻找猿粪：我可能是世界上最艰难的铲屎官》《猿粪有什么好珍惜的？》分享了别样的跟猿工作日常；
+            {intl.formatMessage({ id: 'news.content.output.4' })}
             <br />
-            “长臂猿和它的邻居们”、“云山同事热爱工作”、“云山同事关系良好”系列原创视频，从长臂猿及相关动植物科普、保护工作记录等方面展示更加立体的保护工作。
+            {intl.formatMessage({ id: 'news.content.output.5' })}
             <br />
-            同时，持续推出的天天玩偶、长臂猿生境拼图、知识手册、解密游戏盒、长臂猿服饰等原创和联名文创周边，策划的月捐一周年“样样好”活动、“虎年春节指南”等活动，都让我们与大众的关系更加紧密
+            {intl.formatMessage({ id: 'news.content.output.6' })}
             <br />
-            截至2023年7月，云山保护微信公众号关注者达1.9万，微博粉丝数达7.9万，B站粉丝数达5000+
+            {intl.formatMessage({ id: 'news.content.output.7' })}
           </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">关注我们</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'news.follow' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>

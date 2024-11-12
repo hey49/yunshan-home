@@ -87,7 +87,7 @@ export default props => {
           xs={12}
           sm={10}
           md={8}
-          direction="row"
+          direction={{ xs: 'column', md: 'row' }}
           justify="flex-start"
           alignItems="center"
         >
@@ -98,7 +98,7 @@ export default props => {
               onClick={playAudio}
               icon={isPlaying ? <PauseOutlined /> : <SoundOutlined />}
             >
-              听声音
+              {intl.formatMessage({ id: 'protect.archive.listen' })}
             </Button>
           </Grid>
           <Grid item xs={10} sm={9} md={9}>
@@ -111,7 +111,10 @@ export default props => {
               type="card"
             >
               {data.map(item => (
-                <Tabs.TabPane tab={item.name} key={item.key.toString()} />
+                <Tabs.TabPane
+                  tab={intl.formatMessage({ id: item.name })}
+                  key={item.key.toString()}
+                />
               ))}
             </Tabs>
           </Grid>
@@ -143,34 +146,104 @@ export default props => {
           </Grid>
           <Grid item xs={12} sm={6} md={5} className="archiveItem">
             <Card>
-              <Descriptions title={data[selected].name} column={1}>
-                <Item label={<div style={descItemStyle}>学名</div>}>
+              <Descriptions
+                title={intl.formatMessage({ id: data[selected].name })}
+                column={1}
+              >
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.name' })}
+                    </div>
+                  }
+                >
                   <i>{data[selected].latin}</i>
                 </Item>
-                <Item label={<div style={descItemStyle}>分类</div>}>
-                  <Text>{data[selected].classification.family}</Text>
-                  <Text>{`科_`}</Text>
-                  <Text>{data[selected].classification.genus}</Text>
-                  <Text>属</Text>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.taxonomy' })}
+                    </div>
+                  }
+                >
+                  <Text>
+                    {intl.formatMessage({
+                      id: data[selected].classification.family,
+                    })}
+                    &nbsp;
+                    {intl.formatMessage({
+                      id: data[selected].classification.genus,
+                    })}
+                  </Text>
+                  {/*<Text>*/}
+                  {/*  {intl.formatMessage({ id: 'protect.archive.family' })}*/}
+                  {/*</Text>*/}
+                  {/*<Text>{intl.formatMessage({id: data[selected].classification.genus})}</Text>*/}
+                  {/*<Text>*/}
+                  {/*  {intl.formatMessage({ id: 'protect.archive.genera' })}*/}
+                  {/*</Text>*/}
                 </Item>
-                <Item label={<div style={descItemStyle}>体型</div>}>
-                  <p>{`体重：${data[selected].body.weight}kg`}</p>
-                  <p>{`体长：${data[selected].body.height}cm`}</p>
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.body' })}
+                    </div>
+                  }
+                >
+                  <p>
+                    {intl.formatMessage({ id: 'protect.archive.weight' })}
+                    {`${data[selected].body.weight}kg`}
+                    &nbsp;
+                  </p>
+                  <p>
+                    {intl.formatMessage({ id: 'protect.archive.length' })}
+                    {`${data[selected].body.height}cm`}
+                  </p>
                 </Item>
-                <Item label={<div style={descItemStyle}>IUCN等级</div>}>
-                  {data[selected].IUCN}
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.iucn' })}
+                    </div>
+                  }
+                >
+                  {intl.formatMessage({ id: data[selected].IUCN })}
                 </Item>
-                <Item label={<div style={descItemStyle}>中国保护级别</div>}>
-                  {data[selected].chineseLevel}
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.status' })}
+                    </div>
+                  }
+                >
+                  {intl.formatMessage({ id: data[selected].chineseLevel })}
                 </Item>
-                <Item label={<div style={descItemStyle}>分布</div>}>
-                  {data[selected].distribution}
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.range' })}
+                    </div>
+                  }
+                >
+                  {intl.formatMessage({ id: data[selected].distribution })}
                 </Item>
-                <Item label={<div style={descItemStyle}>数量</div>}>
-                  {data[selected].amount}
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.number' })}
+                    </div>
+                  }
+                >
+                  {intl.formatMessage({ id: data[selected].amount })}
                 </Item>
-                <Item label={<div style={descItemStyle}>特征</div>}>
-                  {data[selected].feature}
+                <Item
+                  label={
+                    <div style={descItemStyle}>
+                      {intl.formatMessage({ id: 'protect.archive.feature' })}
+                    </div>
+                  }
+                >
+                  {intl.formatMessage({ id: data[selected].feature })}
                 </Item>
               </Descriptions>
             </Card>

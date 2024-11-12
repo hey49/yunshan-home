@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { createContext, useState } from 'react';
 import ProLayout, { DefaultFooter } from '@ant-design/pro-layout';
 import { Link, useIntl, history, setLocale, SelectLang, getLocale } from 'umi';
-import logo from '../public/logo.jpeg';
+import logo from '../public/logo.png';
 import { Button } from 'antd';
 import { WeiboOutlined, WechatOutlined, MailOutlined } from '@ant-design/icons';
 import BasicAnchor from './anchor';
 import './basicLayout.less';
+import data from '@/data';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 const BasicLayout: React.FC = props => {
   const intl = useIntl();
@@ -149,7 +152,7 @@ const BasicLayout: React.FC = props => {
           routes: [
             {
               path: '/us/will',
-              name: "使命愿景"
+              name: intl.formatMessage({ id: 'menu.us.will' }),
             },
             {
               path: '/us/council',
@@ -181,7 +184,6 @@ const BasicLayout: React.FC = props => {
           path: '/news',
           name: intl.formatMessage({ id: 'menu.news' }),
           routes: [
-
             {
               path: '/news/gibbonday',
               name: intl.formatMessage({
@@ -269,22 +271,92 @@ const BasicLayout: React.FC = props => {
       )}
       footerRender={() => {
         return (
-          <DefaultFooter
-            copyright={`${new Date().getFullYear()} 大理白族自治州\n云山生物多样性保护与研究中心`}
-            links={[
-              {
-                key: 'yunshan',
-                title: '云山保护',
-                href: 'http://www.cloudmountain.cn/',
-                blankTarget: true,
-              },
-              {
-                key: 'mail',
-                title: <MailOutlined />,
-                href: 'mailto:info@cloudmountain.cn',
-              },
-            ]}
-          />
+          <div className="footer">
+            <img
+              className="footer-img"
+              src={data.background}
+              alt="Background"
+            />
+            <div
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'space-between', // Changed to space-between for better distribution
+                alignItems: 'flex-start',
+                position: 'relative',
+                zIndex: 2,
+                padding: '20px',
+              }}
+            >
+              <div className="footer-qr">
+                <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <div>
+                    <img
+                      src={data.s1}
+                      alt="bilibili"
+                      style={{ width: '60px', height: '60px' }}
+                    />
+                    <p>Bilibili</p>
+                  </div>
+                  <div>
+                    <img
+                      src={data.s2}
+                      alt="xhs"
+                      style={{ width: '60px', height: '60px' }}
+                    />
+                    <p>
+                      {intl.formatMessage({ id: 'footer.xhs.line1' })}
+                      <br />
+                      {intl.formatMessage({ id: 'footer.xhs.line2' })}
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src={data.s3}
+                      alt="wechat"
+                      style={{ width: '60px', height: '60px' }}
+                    />
+                    <p>{intl.formatMessage({ id: 'footer.wechat' })}</p>
+                  </div>
+                  <div>
+                    <img
+                      src={data.s4}
+                      alt="微博"
+                      style={{ width: '60px', height: '60px' }}
+                    />
+                    <p>{intl.formatMessage({ id: 'footer.weibo' })}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style={{ color: 'black', flex: '1 1 45%', marginLeft: '25px' }}
+              >
+                <h4>{intl.formatMessage({ id: 'footer.contact' })}</h4>
+                <p>{intl.formatMessage({ id: 'footer.address' })}</p>
+                <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
+                <p>{intl.formatMessage({ id: 'footer.site' })}</p>
+                <p>{intl.formatMessage({ id: 'footer.email' })}</p>
+              </div>
+            </div>
+          </div>
+          // <DefaultFooter
+          //   copyright={intl.formatMessage({ id: 'footer.copyright' })}
+          //   links={[
+          //     {
+          //       key: 'yunshan',
+          //       title: intl.formatMessage({ id: 'footer.yunshan' }),
+          //       href: 'http://www.cloudmountain.cn/',
+          //       blankTarget: true,
+          //     },
+          //     {
+          //       key: 'mail',
+          //       title: <MailOutlined />,
+          //       href: 'mailto:info@cloudmountain.cn',
+          //     },
+          //   ]}
+          // />
         );
       }}
     >

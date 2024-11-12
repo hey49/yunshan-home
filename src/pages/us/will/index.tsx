@@ -18,47 +18,58 @@ const Tianxing: React.FC = props => {
         >
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">使命</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'about.mission' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            以科研监测助推公众科普，链接多方资源保护长臂猿及其生存繁衍的栖息地
-
-          </Grid>
-
-          <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
-            <Divider>
-              <div className="tianxing-title">愿景</div>
-            </Divider>
-          </Grid>
-          <Grid item xs={12} sm={10} md={8}>
-            千山长青 猿声常鸣
+            {intl.formatMessage({ id: 'about.mission.1' })}
           </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">价值观</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'about.vision' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            科学 平等 合作 信任 可持续
+            {intl.formatMessage({ id: 'about.vision.1' })}
           </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">口号</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'about.value' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            和云山一起保护中国猿          </Grid>
+            {intl.formatMessage({ id: 'about.value.1' })}
+          </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">战略方向</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'about.slogan' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            十年内在社区保护地实现长臂猿种群净增长          </Grid>
+            {intl.formatMessage({ id: 'about.slogan.1' })}
+          </Grid>
+
+          <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
+            <Divider>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'about.focusing' })}
+              </div>
+            </Divider>
+          </Grid>
+          <Grid item xs={12} sm={10} md={8}>
+            {intl.formatMessage({ id: 'about.focusing.1' })}
+          </Grid>
         </Grid>
       </Card>
     </div>

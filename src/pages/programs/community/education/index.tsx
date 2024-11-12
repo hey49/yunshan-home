@@ -10,7 +10,16 @@ const Tianxing: React.FC = props => {
 
   return (
     <div className="article-container">
-      <img className="title-img" src={data['ps2'].src}></img>
+      <div className="image-container">
+        <img
+          className="title-img"
+          src={data['ps2'].src}
+          alt="Image Title Loading"
+        />
+        <div className="title-overlay">
+          {intl.formatMessage({ id: 'menu.programs.community.education' })}
+        </div>
+      </div>
       <Card>
         <Grid
           container
@@ -21,26 +30,37 @@ const Tianxing: React.FC = props => {
         >
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">立项理由</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.reason' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            云南无量山哀牢山国家级自然保护区是森林生态系统和野生生物类别的自然保护区，以中山湿性常绿阔叶林森林生态系统以及在其生存的珍稀濒危动物为主要保护对象。保护区物种资源丰富，其中，有国家一级保护植物4种（红豆杉、长蕊木兰等）、国家一级保护动物11种（西黑冠长臂猿、灰叶猴等），面积达147万亩，周边涉及5万多人口。为了更好地开展保护工作，培养周边群众对家乡环境的喜爱，获得人们对保护的认知与支持。自2019年以来，云山保护与无量山哀牢山国家级自然保护区景东管护局等单位长期合作，围绕长臂猿栖息地周边小学开展了一系列关于西黑冠长臂猿的相关科普宣教活动。
+            {intl.formatMessage({ id: 'programs.community.education.reason' })}
           </Grid>
 
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">项目简介</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.description' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
-            2019年3-7月，“长臂猿小使者”科普宣传系列活动在周边小学开展“认识家乡的长臂猿”、“保护中国猿，科普进校园”科普课堂宣讲、主题游园会、长臂猿巨画制作等，游园会与科普课堂相结合的宣传方式，把保护区宣教工作向前推进了一步，保护区将继续用知识和欢乐把西黑冠长臂猿带回给生活在两山的孩子心中。
-            <br />
-            2021年7-9月，两山自然教育体验活动用自然教育的手法，在无量山哀牢山周边乡村小学，基于校园及周边环境，研发并开展科普课堂和校园自然周活动，促进学生对家乡自然环境的认知、理解和欣赏，让社区的年轻一代逐步了解自然和人的关系，成为实实在在的家乡生态环境守护者。
+            {intl.formatMessage({
+              id: 'programs.community.education.description.1',
+            })}
+          </Grid>
+          <Grid item xs={12} sm={10} md={8}>
+            {intl.formatMessage({
+              id: 'programs.community.education.description.2',
+            })}
           </Grid>
           <Grid item container xs={12} sm={10} md={8} alignItems="flex-start">
             <Divider>
-              <div className="tianxing-title">了解更多</div>
+              <div className="tianxing-title">
+                {intl.formatMessage({ id: 'programs.learn' })}
+              </div>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={10} md={8}>
