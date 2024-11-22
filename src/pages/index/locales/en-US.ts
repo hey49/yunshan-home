@@ -345,8 +345,15 @@ export default {
   'footer.weibo': 'Weibo',
   'footer.contact': 'Contact',
   'footer.address':
-    'Address: C-2-2 Art Zone, No.56 Chuangdanchang, Taping Street, Dali City, Yunnan Province',
+    'Address: No. 1, Floor 1, Unit 1, Building 2, No. 1 Yincang Road, Dali Ancient Town, Dali Bai Autonomous Prefecture, Yunnan Province',
   'footer.tel': 'Tel: 0872-2504186',
   'footer.site': 'Official Website: www.cloudmountain.cn',
   'footer.email': 'Email: info@cloudmountain.cn',
+
+  'us.report.annual': 'Annual Report',
+  'us.report.month': 'Month',
+  'us.report.s1': 'Season 1',
+  'us.report.s2': 'Season 2',
+  'us.report.s3': 'Season 3',
+  'us.report.s4': 'Season 4',
 };

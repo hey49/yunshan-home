@@ -53,11 +53,25 @@ import r2023m78 from './assets/reports/r2023m78.pdf';
 import r2023m78c from './assets/reports/r2023m78c.png';
 import r2023m910 from './assets/reports/r2023m910.pdf';
 import r2023m910c from './assets/reports/r2023m910c.png';
+import r2023m1112 from './assets/reports/r2023m1112.pdf';
+import r2023m1112c from './assets/reports/r2023m1112c.png';
+import r2023a from './assets/reports/r2023a.pdf';
+import r2023ac from './assets/reports/r2023ac.png';
+import r2024m12 from './assets/reports/r2024m12.pdf';
+import r2024m12c from './assets/reports/r2024m12c.png';
+import r2024m34 from './assets/reports/r2024m34.pdf';
+import r2024m34c from './assets/reports/r2024m34c.png';
+import r2024m56 from './assets/reports/r2024m56.pdf';
+import r2024m56c from './assets/reports/r2024m56c.png';
+import r2024m78 from './assets/reports/r2024m78.pdf';
+import r2024m78c from './assets/reports/r2024m78c.png';
+import r2024m910 from './assets/reports/r2024m910.pdf';
+import r2024m910c from './assets/reports/r2024m910c.png';
 
 const data = [
   {
     isAnnual: true,
-    name: '2017年报',
+    name: '2017',
     sm: '2017',
     src: r2017ac,
     href: r2017a,
@@ -116,7 +130,7 @@ const data = [
   },
   {
     isAnnual: true,
-    name: '2018年报',
+    name: '2018',
     sm: '2018',
     src: r2018ac,
     href: r2018a,
@@ -202,7 +216,7 @@ const data = [
   },
   {
     isAnnual: true,
-    name: '2019年报',
+    name: '2019',
     sm: '2019',
     src: r2019ac,
     href: r2019a,
@@ -284,7 +298,7 @@ const data = [
   },
   {
     isAnnual: true,
-    name: '2020年报',
+    name: '2020',
     sm: '2020',
     src: r2020ac,
     href: r2020a,
@@ -364,7 +378,7 @@ const data = [
   {
     isAnnual: true,
     isPdf: true,
-    name: '2021年报',
+    name: '2021',
     sm: '2021',
     src: r2021ac,
     href: r2021a,
@@ -432,7 +446,7 @@ const data = [
   {
     isAnnual: true,
     isPdf: true,
-    name: '2022年报',
+    name: '2022',
     sm: '2022',
     src: r2022ac,
     href: r2022a,
@@ -487,6 +501,85 @@ const data = [
     src: r2023m910c,
     href: r2023m910,
     down: '云山保护2023年9-10月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2023年11-12月',
+    sm: '2023-11-12',
+    src: r2023m1112c,
+    href: r2023m1112,
+    down: '云山保护2023年11-12月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: true,
+    name: '2023',
+    sm: '2023',
+    src: r2023ac,
+    href: r2023a,
+    down: '云山保护2023年年报.pdf',
+    category: [
+      '卷首语',
+      '2023大事记',
+      '物种研究',
+      '保护行动',
+      '链接公众',
+      '媒体传播',
+      '机构与成长',
+      '财务报告',
+      '致谢',
+    ],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2024年1-2月',
+    sm: '2024-1-2',
+    src: r2024m12c,
+    href: r2024m12,
+    down: '云山保护2024年1-2月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2024年3-4月',
+    sm: '2024-3-4',
+    src: r2024m34c,
+    href: r2024m34,
+    down: '云山保护2024年3-4月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2024年5-6月',
+    sm: '2024-5-6',
+    src: r2024m56c,
+    href: r2024m56,
+    down: '云山保护2024年5-6月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2024年7-8月',
+    sm: '2024-7-8',
+    src: r2024m78c,
+    href: r2024m78,
+    down: '云山保护2024年7-8月.pdf',
+    category: [],
+  },
+  {
+    isAnnual: false,
+    isPdf: true,
+    name: '2024年9-10月',
+    sm: '2024-9-10',
+    src: r2024m910c,
+    href: r2024m910,
+    down: '云山保护2024年9-10月.pdf',
     category: [],
   },
 ];

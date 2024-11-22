@@ -328,8 +328,16 @@ export default {
   'footer.xhs.line2': ' ',
   'footer.weibo': '微博',
   'footer.contact': '联系方式',
-  'footer.address': '地址: 云南省大理市城塔坪街56号床单厂 艺术区C-2-2',
+  'footer.address':
+    '地址: 云南省大理白族自治州大理古城银苍路1号供电局院内2栋1单元1楼1号',
   'footer.tel': '电话: 0872-2504186',
   'footer.site': '网址: www.cloudmountain.cn',
   'footer.email': '邮箱: info@cloudmountain.cn',
+
+  'us.report.annual': '年报',
+  'us.report.month': '月',
+  'us.report.s1': '第一季度',
+  'us.report.s2': '第二季度',
+  'us.report.s3': '第三季度',
+  'us.report.s4': '第四季度',
 };

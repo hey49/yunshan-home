@@ -281,16 +281,17 @@ const BasicLayout: React.FC = props => {
               style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'space-between', // Changed to space-between for better distribution
+                justifyContent: 'space-between',
                 alignItems: 'flex-start',
                 position: 'relative',
                 zIndex: 2,
-                padding: '20px',
               }}
             >
-              <div className="footer-qr">
-                <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
-                <div style={{ display: 'flex', gap: '10px' }}>
+              <div className="footer_column">
+                <div className="follow">
+                  <h4>{intl.formatMessage({ id: 'footer.follow' })}</h4>
+                </div>
+                <div className="social_med">
                   <div>
                     <img
                       src={data.s1}
@@ -330,14 +331,16 @@ const BasicLayout: React.FC = props => {
                 </div>
               </div>
 
-              <div
-                style={{ color: 'black', flex: '1 1 45%', marginLeft: '25px' }}
-              >
-                <h4>{intl.formatMessage({ id: 'footer.contact' })}</h4>
-                <p>{intl.formatMessage({ id: 'footer.address' })}</p>
-                <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
-                <p>{intl.formatMessage({ id: 'footer.site' })}</p>
-                <p>{intl.formatMessage({ id: 'footer.email' })}</p>
+              <div className="footer_column">
+                <div className="contact">
+                  <h4 style={{ textAlign: 'center' }}>
+                    {intl.formatMessage({ id: 'footer.contact' })}
+                  </h4>
+                  <p>{intl.formatMessage({ id: 'footer.address' })}</p>
+                  <p>{intl.formatMessage({ id: 'footer.tel' })}</p>
+                  <p>{intl.formatMessage({ id: 'footer.site' })}</p>
+                  <p>{intl.formatMessage({ id: 'footer.email' })}</p>
+                </div>
               </div>
             </div>
           </div>

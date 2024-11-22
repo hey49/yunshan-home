@@ -29,7 +29,9 @@ const Report: React.FC<ReportProps> = props => {
     masksBig[index] = {
       style: curr >= index ? passedStyle : null,
       label: item.isAnnual ? (
-        <strong style={{ fontSize: '16px' }}>{item.name}</strong>
+        <strong style={{ fontSize: '16px' }}>
+          {item.name + intl.formatMessage({ id: 'us.report.annual' })}
+        </strong>
       ) : (
         <div>{item.name}</div>
       ),
@@ -83,17 +85,17 @@ const Report: React.FC<ReportProps> = props => {
         sm={12}
         md={10}
         direction="row"
-        justify="space-around"
+        justifyContent="space-around"
         alignItems="center"
         style={{ background: '#ffffff', margin: 'auto', height: '100%' }}
       >
-        <Grid item xs={3} sm={2} md={2} className="report-box">
+        <Grid item xs={4} sm={3} md={2} className="report-box">
           <Hidden xsDown>
             <div
               style={{ height: '70vh', overflow: 'scroll', marginLeft: '-4vh' }}
             >
               <Slider
-                style={{ height: '100vh' }}
+                style={{ height: '100vh', marginTop: '20px' }}
                 tooltipVisible={false}
                 marks={masksBig}
                 defaultValue={curr}
