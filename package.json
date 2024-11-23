@@ -33,6 +33,7 @@
     "prettier": "^1.19.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-native-blurhash": "^2.1.0",
     "swiper": "^9.2.0",
     "yorkie": "^2.0.0"
   },
